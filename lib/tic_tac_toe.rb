@@ -14,7 +14,15 @@ class TicTacToe
   [2,4,6]
   ]
 
+  def display_board
+    @board
+  end
+  
   def input_to_index(user_input)
     converted_input = (user_input.to_i) - 1
+  end
+
+  def move(index, token = "X")
+    @board[index] = token
   end
 end
